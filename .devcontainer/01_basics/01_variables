@@ -1,0 +1,13 @@
+const accountID = 14553
+let accountEmail = "malik@gmail.com"
+var accountPassword = "12345"
+accountcity = "multan"
+
+ //accountID = 2 // const variables cannot change 
+
+console.log(accountID);
+accountEmail = "ali@gmail.com"
+accountPassword = "19945"
+accountcity = "lahore"
+
+console.table([accountID, accountEmail, accountPassword, accountcity])
