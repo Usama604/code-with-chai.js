@@ -1,0 +1,29 @@
+// primitive
+
+// 7 types: string, Number, null, undefined,  Boolean, symbol, BigInt 
+
+const score = 100 
+const scorevalue = 101.2
+
+const isLoggedIn = false
+const outsidetem = null
+let useremail;
+
+const id = symbol('123')
+const anotherid = symbol('123')
+
+console.log(id === anotherid)
+
+// Reference {Non primitive}
+
+// Array, objects, Functions 
+
+const person = ["ali", "malik", "khan"]
+let obj = {
+    name: ali,
+    age: 22
+}
+
+const myFunction = function(){
+    console.log("hello world")
+}
