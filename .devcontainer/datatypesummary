@@ -9,8 +9,8 @@ const isLoggedIn = false
 const outsidetem = null
 let useremail;
 
-const id = symbol('123')
-const anotherid = symbol('123')
+const id = symbol  ('123')
+const anotherid = symbol ('123')
 
 console.log(id === anotherid)
 
@@ -20,10 +20,34 @@ console.log(id === anotherid)
 
 const person = ["ali", "malik", "khan"]
 let obj = {
-    name: ali,
+    name: "malik",
     age: 22
 }
 
 const myFunction = function(){
     console.log("hello world")
 }
+
+
+// Stack (primitive) , Heap (No primitive)
+
+ let myYoutube = "malikcode"
+
+ let anothername = myYoutube
+ anothername = "codewithmalik"
+
+ console.log(myYoutube)
+ console.log(anothername)
+
+ let userone = {
+    email: "user@google.com"
+    upi : "user@ybl"
+ }
+
+ let usertwo = userone
+
+ usertwo.email = "malik@google.com"
+
+ console.log(userone.email)
+ console.log(usertwo.email) 
+
