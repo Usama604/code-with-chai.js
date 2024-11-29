@@ -27,9 +27,11 @@ const newArr = Arr3.join()
 
 console.log("A ", Arr)
 
-const myn1 = Arr.slice(1,3)
 
+const myn1 = Arr.slice(1,3)
 console.log(myn1)
+console.log("B", Arr)
 
 const myn2 = Arr.splice(1,3);
 console.log(myn2);
+console.log("c", Arr)
