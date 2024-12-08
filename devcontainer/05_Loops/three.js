@@ -1,4 +1,4 @@
-// for loops
+// for of loops
 
 // ["", "", ]
 // [{}, {}, {}]
