@@ -29,6 +29,8 @@ function myname(username) {
       return `${username} just logged in`
 }
 
+console.log(myname());
+
 console.log(myname("malik"))
 
 function calculatecartprice(val1, val2, ...num1){
