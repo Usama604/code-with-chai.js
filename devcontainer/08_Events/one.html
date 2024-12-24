@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Amazing Image</h2>
+   <div>
+      <ul id="images">
+        <li><img src="img.jpg" width="200px" height="200px" id="owl" alt=""></li>
+        <li><img src="imageA.jpeg" width="200px" height="200px" id="one" alt=""></li>
+        <li><img src="imageB.jpeg"  width="200px" height="200px" id="two" alt=""></li>
+        <li><img src="imageC.jpeg" width="200p" height="200px" id="three"  alt=""></li>
+        <li><img src="https://youtube.com/" id="youtube" width="200px"  height="200px" alt=""></li>
+      </ul>
+   </div>
+</body>
+<script>
+
+    // document.getElementById('owl').onclick = function(){
+    //     alert("clicked on")
+    // }
+
+   
+   // attachEvent()
+   // jQuery - on 
+
+
+   // type, timestamp, dePrevented 
+   // target, toElement, srcElement, currentTarget
+   // clientX, clientY, screenX, screenY
+   // altKey, ctrlKey, shiftkey, keyCode
+
+
+    // document.getElementById('images').addEventListener ('click' , function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('owl').addEventListener ('click' , function(e){
+    //     console.log("clicked owl");
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('youtube').addEventListener ('click' , function(e){
+    //      e.preventDefault()
+    //      e.stopPropagation()
+    //     console.log("clicked google");
+    // }, false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+     console.log(e.target.tagName);
+    if (e.target.tagName === "IMG") {
+        let removeIT = e.target.parentNode;
+        removeIT.remove()
+    }
+    }, false)
+
+    //removeIT.parentNode.removeChild(removeIT)
+</script>
+</html>
